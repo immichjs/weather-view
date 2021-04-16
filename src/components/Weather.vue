@@ -52,7 +52,7 @@ export default {
                 alert('Informe uma cidade válida para continuar.')
             } else {
                 axios
-                    .get(`http://api.weatherapi.com/v1/forecast.json?key=${this.key}&q=${this.city}&aqi=no&lang=pt`)
+                    .get(`https://api.weatherapi.com/v1/forecast.json?key=${this.key}&q=${this.city}&aqi=no&lang=pt`)
                     .then(response => {
                         const data = response.data
                         this.dataWeather = data
