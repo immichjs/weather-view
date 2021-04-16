@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-indigo-400 rounded-2xl py-12 px-5 pr-10 text-white font-medium flex flex-col w-64 shadow-xl">
+    <div class="flex flex-col w-64 px-5 py-12 pr-10 font-medium text-white bg-indigo-400 shadow-xl rounded-2xl">
         <h1>Detalhes do tempo</h1>
         <ul>
             <li>
@@ -17,7 +17,6 @@
             <li>
                 <div class="flex justify-between">
                     <span>Vento</span>
-                    <span>{{ windDir }}</span>
                     <span>{{ windKph }} %</span>
                 </div>
             </li>
@@ -36,13 +35,8 @@ export default {
     props: {
         cloud: Number,
         humidity: Number,
-        windDir: String,
         windKph: Number,
         feelslikeC: Number,
     }
 }
 </script>
-
-<style>
-
-</style>
