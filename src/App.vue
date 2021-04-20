@@ -8,7 +8,7 @@
         class="p-4 font-medium text-center text-indigo-400 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent w-96 text-md focus:"
       >
       <button @click="search" class="p-4 text-white bg-indigo-400 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-50">
-        Buscar informações
+        Verificar Clima
       </button>
     </div>
     <Weather v-if="visible" :cityProp="city"/>
